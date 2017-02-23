@@ -1,0 +1,12 @@
+<h1>Create New List Item</h1>
+
+<%= form_for @list do |f| %>
+  <div>
+    <%= f.label :items %>
+    <%= f.text_field :items %>
+  </div>
+<br />
+<%= f.submit "Create List Item" %>
+<% end %>
+<hr />
+<%= link_to 'Home', root_path %>
